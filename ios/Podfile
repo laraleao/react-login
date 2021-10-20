@@ -12,6 +12,8 @@ target 'cadastro' do
     :hermes_enabled => false
   )
 
+  pod 'RNGestureHandler', :path => '../node_modules/react-native-gesture-handler'
+
   target 'cadastroTests' do
     inherit! :complete
     # Pods for testing
