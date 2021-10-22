@@ -9,7 +9,13 @@ import {
 
 const Cadastro = ({navigation}) => {
   return (
-    <View>
+    <View
+      style={{
+        backgroundColor: 'lightblue',
+        padding: 10,
+        flex: 1,
+        justifyContent: 'center',
+      }}>
       <TouchableOpacity onPress={() => navigation.navigate('Login')}>
         <Text style={{color: 'black'}}>Nome</Text>
         <TextInput>Digite seu nome completo</TextInput>
@@ -22,13 +28,15 @@ const Cadastro = ({navigation}) => {
 
       <TouchableOpacity onPress={() => navigation.navigate('Login')}>
         <Text style={{color: 'black'}}>Senha</Text>
-        <TextInput>Digite ssua senha</TextInput>
+        <TextInput>Digite sua senha</TextInput>
       </TouchableOpacity>
 
       <TouchableOpacity onPress={() => navigation.navigate('Login')}>
         <Text style={{color: 'black'}}>Confirme sua senha</Text>
         <TextInput>Digite sua senha novamente</TextInput>
       </TouchableOpacity>
+
+      {/* <Button submit={() => navigation.navigate('Cadastro')} title="Logar" /> */}
     </View>
   );
 };

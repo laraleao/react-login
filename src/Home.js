@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {View, Text, TouchableOpacity, Button, StyleSheet} from 'react-native';
+import {View, Button, StyleSheet} from 'react-native';
 
 class ButtonClick extends Component {
   _onPressButton() {}
@@ -22,10 +22,14 @@ const Home = ({navigation}) => {
         <Text style={{color: 'black'}}>Cadastro</Text>
       </TouchableOpacity> */}
 
-      <Button onPress={() => this._onPressButton} title="Login" />
-      <Button onPress={() => this._onPressButton} title="Cadastro" />
+      <Button onPress={() => navigation.navigate('Login')} title="Login" />
+      <Button
+        onPress={() => navigation.navigate('Cadastro')}
+        title="Cadastro"
+      />
     </View>
   );
 };
 
+// export default createAppContainer(Routes);
 export default Home;
